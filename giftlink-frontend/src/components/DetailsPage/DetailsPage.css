@@ -1,69 +1,128 @@
+/* ============================================
+   DETAILS PAGE - Custom Design by Iñigo Omar
+   ============================================ */
+
 /* Style for image placeholder */
 .image-placeholder-large {
-    width: 100%; /* Task 1: Set width to 100% */
-    height: 400px; /* Task 1: Set height to 400px */
-    position: relative; /* Task 1: Set position to relative */
-    background-color: #f0f0f0; /* Task 1: Placeholder background color */
-    /* Additional styles as needed */
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 /* Style for product image */
 .product-image-large {
-    width: 100%; /* Task 2: Set width to 100% */
-    height: 100%; /* Task 2: Set height to 100% */
-    object-fit: cover; /* Task 2: Ensure the image covers the area */
-    /* Additional styles as needed */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 /* Style for 'no image available' placeholder */
 .no-image-available-large {
-    display: flex; /* Task 3: Use flexbox */
-    align-items: center; /* Task 3: Center the text vertically */
-    justify-content: center; /* Task 3: Center the text horizontally */
-    background-color: #ccc; /* Task 3: Set background color */
-    color: #333; /* Task 3: Set text color */
-    font-size: 18px; /* Task 3: Set font size */
-    /* Additional styles as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #E2E8F0, #CBD5E0);
+    color: #718096;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    border-radius: 16px;
 }
 
 /* Style for card header */
 .card-header {
-    background-color: #007bff; /* Task 4: Choose a background color */
-    color: #fff; /* Task 4: Set text color to white */
+    background: linear-gradient(135deg, #6C63FF, #5A52D5);
+    color: #fff;
     text-align: center;
-    padding: 15px;
-    /* Additional styles as needed */
+    padding: 1.5rem;
+    border-radius: 16px 16px 0 0 !important;
+    border: none;
 }
 
 /* Style for details title */
 .details-title {
-    font-size: 28px; /* Task 5: Apply font size */
-    color: #333; /* Task 5: Set text color */
-    font-weight: bold; /* Task 5: Make the title bold */
-    /* Additional styles as needed */
+    font-size: 2rem;
+    color: #2D3748;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Details card */
+.details-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(108, 99, 255, 0.15);
+    overflow: hidden;
+}
+
+/* List group items */
+.list-group-item {
+    border: none;
+    padding: 1rem 1.5rem;
+    color: #4A5568;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item strong {
+    color: #2D3748;
+}
+
+/* Back button */
+.btn-secondary {
+    background: linear-gradient(135deg, #718096, #4A5568);
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(113, 128, 150, 0.4);
 }
 
 /* Style for comments section */
 .comments-section {
-       /* Task 6: Style the comments section for readability */
-    margin-top: 20px; /* Add top margin for spacing */
-    /* Additional styles as needed */
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
+.comments-section h4 {
+    color: #2D3748;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
 
 /* Style for individual comment card */
 .comments-section .card {
-    margin-bottom: 15px; /* Add bottom margin for spacing between cards */
-    /* Additional styles for individual comment card */
+    margin-bottom: 1rem;
+    border: none;
+    background: #F7FAFC;
+    border-radius: 12px;
+    padding: 1rem;
 }
+
 /* Style for comment author */
 .comments-section .comment-author {
-    font-weight: bold; /* Make the comment author's name bold */
-    /* Additional styles for comment author */
+    font-weight: 600;
+    color: #6C63FF;
 }
+
 /* Style for comment text */
 .comments-section .comment-text {
-    /* Additional styles for comment text */
-    color: #555;
+    color: #4A5568;
+    margin-top: 0.5rem;
 }
 

@@ -1,44 +1,76 @@
+/* ============================================
+   LOGIN PAGE - Custom Design by Iñigo Omar
+   ============================================ */
+
 .login-card {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    box-shadow: 0 20px 60px rgba(108, 99, 255, 0.15);
+    border-radius: 20px;
+    border: none;
+    padding: 2rem;
 }
 
 .login-card .form-label {
     font-weight: 600;
+    color: #4A5568;
+    margin-bottom: 0.5rem;
 }
 
 .login-card input {
-    border-radius: 0.25rem;
+    border-radius: 12px;
+    border: 2px solid #E2E8F0;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-card input:focus {
+    border-color: #6C63FF;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+    outline: none;
 }
 
 .login-card .btn {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .login-card .btn-primary {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #6C63FF, #5A52D5);
     border: none;
 }
 
+.login-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+}
+
 .login-card .btn-secondary {
-    background-color: #dc3545;
+    background: linear-gradient(135deg, #FC8181, #F56565);
     border: none;
 }
 
 .login-card .text-primary {
-    color: #0056b3;
+    color: #6C63FF !important;
 }
 
 .login-card .text-secondary {
-    color: #6c757d;
+    color: #718096;
+}
+
+.login-card h2 {
+    color: #2D3748;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 /* Additional styles */
 a.text-primary:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #5A52D5 !important;
 }
 
 a.text-secondary:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }

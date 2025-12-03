@@ -2,61 +2,84 @@
 html {
   overflow-y: scroll;
 }
-/* Primary color for headers and important buttons */
+
+/* ============================================
+   CUSTOM DESIGN BY IÑIGO OMAR
+   GiftLink - IBM Capstone Project 2025
+   ============================================ */
+
+/* Primary color for headers and important buttons - Purple/Violet theme */
 .custom-card-title,
 .btn-primary {
-  background-color: #0056b3; /* Strong, confident blue */
-  color: white; /* For text on primary color background */
+  background-color: #6C63FF; /* Modern violet */
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
 }
 
 /* Secondary color for hover states and highlights */
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #009688; /* Teal */
+  background-color: #5A52D5; /* Darker violet */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
 }
 
-/* General background color */
+/* General background color - Soft gradient */
 body,
 .page-background {
-  background-color: #f4f4f4; /* Light grey */
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   margin-right: calc(100vw - 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Background color for cards */
 .card {
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(108, 99, 255, 0.15);
 }
 
 /* Text color */
 .card-title,
 .card-text {
-  color: #333333; /* Darker grey */
+  color: #2D3748; /* Dark slate */
 }
 
 /* Subtle accent color */
 .text-muted {
-  color: #6c757d; /* Muted grey */
+  color: #718096;
 }
 
 /* Success color for messages or confirmation */
 .text-success,
 .btn-success {
-  color: #28a745; /* Fresh green */
+  color: #38B2AC; /* Modern teal */
 }
 
 .container {
-  padding: 2rem 15%; /* Adds more space on the sides */
+  padding: 2rem 10%;
+  max-width: 1400px;
 }
 
 .row {
-  justify-content: space-around; /* Adds space between cards */
+  justify-content: space-around;
 }
 
 .product-card {
-  margin: 1rem 0; /* Adds space above and below each card */
-  border-radius: 10px; /* Rounded corners for card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  overflow: hidden; /* Ensures nothing spills out of the card's rounded corners */
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: none;
+  background: white;
 }
 
 .image-placeholder {
@@ -125,65 +148,123 @@ body,
 
 /* Customize the navbar brand and links */
 .navbar-brand, .nav-link {
-  font-size: 1.2rem; /* Increase font size */
-  font-weight: 500; /* Medium weight for better visibility */
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6C63FF, #38B2AC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Increase the font size and weight of nav-item */
 .nav-item .nav-link {
-  font-size: 1.1rem; /* Larger font size for nav links */
-  font-weight: bold; /* Bold font weight for emphasis */
-  color: #0056b3; /* Choose a color that stands out */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4A5568;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 /* Change the background color of the navbar */
 .navbar {
-  background-color: #f8f9fa; /* A light color for contrast with the text */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
 }
 
 /* Add a hover effect to nav links */
 .nav-item .nav-link:hover {
-  color: #004085; /* A darker shade for hover state */
-  text-decoration: none; /* Optional: Removes the underline on hover */
+  color: #6C63FF;
+  background-color: rgba(108, 99, 255, 0.1);
+  text-decoration: none;
 }
 
 /* Highlight the active nav link */
 .nav-item.active .nav-link, .nav-item .nav-link.active {
-  color: #d63384; /* A distinct color for the active page */
-  background-color: transparent; /* Optional: Adds a background color to the active link */
-  text-decoration: underline; /* Underlines the active link */
-  font-weight: bold; /* Makes the active link bold */
+  color: #6C63FF;
+  background-color: rgba(108, 99, 255, 0.1);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Style for login button */
 .nav-link.login-btn {
-  background-color: #28a745; /* A green color for login */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s ease-in-out;
+  background: linear-gradient(135deg, #6C63FF, #5A52D5);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-left: 0.5rem;
 }
 
 .nav-link.login-btn:hover,
 .nav-link.login-btn:focus {
-  background-color: #218838; /* A darker green on hover/focus for login */
-  color: white;
+  background: linear-gradient(135deg, #5A52D5, #4840B0);
+  color: white !important;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+}
+
+/* Style for register button */
+.nav-link.register-btn {
+  background: linear-gradient(135deg, #38B2AC, #2C9A94);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.nav-link.register-btn:hover,
+.nav-link.register-btn:focus {
+  background: linear-gradient(135deg, #2C9A94, #248F89);
+  color: white !important;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(56, 178, 172, 0.4);
 }
 
 /* Style for logout button */
 .nav-link.logout-btn {
-  background-color: #dc3545; /* A red color for logout */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s ease-in-out;
+  background: linear-gradient(135deg, #FC8181, #F56565);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: none;
 }
 
 .nav-link.logout-btn:hover,
 .nav-link.logout-btn:focus {
-  background-color: #c82333; /* A darker red on hover/focus for logout */
-  color: white;
+  background: linear-gradient(135deg, #F56565, #E53E3E);
+  color: white !important;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(245, 101, 101, 0.4);
+}
+
+/* Welcome message styling */
+.nav-link[style*="cursor"] {
+  color: #6C63FF !important;
+  font-weight: 600;
+}
+
+/* Footer credit */
+.footer-credit {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+  font-size: 0.9rem;
 }
